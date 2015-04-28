@@ -1,0 +1,26 @@
+# Thais Lizeth Santos Acosta
+# A01630056
+# Quiz 11 Question 1
+
+
+import statistics
+
+def values(a):
+    f=open(a,"r")
+    s=0
+    L=0
+    lista=[]
+    for i in f:
+        s=s+int(i)
+        L=L+1
+        lista.append(int(i))
+    st=statistics.stdev(lista)
+    print()
+    print('The sum is: ',s)
+    print('The number of values is: ,',L)
+    print('The average is: ',(s/L))
+    print('The standard deviation is: ',st)
+
+
+    
+values("random_numbers.txt")
